@@ -53,17 +53,17 @@ bash proxy.sh list
 
 function connect() {
 	echo "" > logs.txt
-	screen -AmdS nohub python3 tunnel.py
+	screen -AmdS tunnel.py python3 tunnel.py
 	sleep 1
 	if [ "$mode" = '0' ] || [ "$mode" = '1' ]
 	then
 
-		screen -AmdS nohub python3 ssh.py 1 1080
+		screen -AmdS ssh.py python3 ssh.py 1 1080
 		# python3 ssh.py 1 1080
 	elif [ "$mode" = '2' ] || [ "$mode" = '3' ]
 		then 
 			
-			screen -AmdS pythonwe python3 ssh.py 2 1080
+			screen -AmdS ssh.py python3 ssh.py 2 1080
 			# python3 ssh.py 2 1080
 	else
 		echo -e "${RED}wrong choice\ntry again${SCOLOR}"
