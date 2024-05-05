@@ -14,9 +14,9 @@ http ssl ssh tunneling vpn for android and linux devices
 
 # packages :
 
-[+] - apt install -y git openssh sshpass netcat-openbsd corkscrew screen python3
+<code> apt install -y git openssh sshpass netcat-openbsd corkscrew screen python3</code>
 
-[+] - pip install certifi
+<code> pip install certifi</code>
 
 
 # configuration :
@@ -30,19 +30,19 @@ past your data into file settings.ini
 
 (root is required in android )
 
-[+] - git clone https://github.com/abdoxfox/http-ssl-ssh-injector.git
+<code> git clone https://github.com/abdoxfox/http-ssl-ssh-injector.git</code>
 
 # steps :
 
 * setup your custom payload and proxy (proxy not required)
 
-[+] - cd http-ssl-ssh-injector
+<code> cd http-ssl-ssh-injector</code>
 
-[+] - sudo  or tsu for termux  #run as root
+sudo  or tsu for termux  #run as root
 
-[+] - chmod +x runvpn.sh
+<code> chmod +x runvpn.sh</code>
 
-[+] - ./runvpn.sh
+<code> ./runvpn.sh</code>
 
 * choose your connection mode:
 
