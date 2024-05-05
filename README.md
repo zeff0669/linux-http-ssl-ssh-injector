@@ -14,7 +14,7 @@ http ssl ssh tunneling vpn for android and linux devices
 
 # packages :
 
-<code> apt install -y git openssh sshpass netcat-openbsd corkscrew screen python3</code>
+<code> apt install -y git openssh sshpass netcat-openbsd corkscrew screen python3 libevent-dev</code>
 
 <code> pip install certifi</code>
 
